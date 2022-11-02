@@ -2,11 +2,12 @@ from typing import List, Any, Optional, Dict
 
 class Person:
     def __init__(self, *args: Optional[List[str]], **kwargs):
-        # self.name = kwargs.get('name') or 'Cassio'
+        self.name = kwargs.get('name') or 'Cassio'
+        '''
         if not kwargs.get('name'):
             kwargs['name'] = 'Cassio'
         self.name = kwargs['name']
-    
+        '''
         # self.cars: List[str] = ['Ferrari', 'Lamborgini']  # self.cars is a list of strings
         self.cars: List[str] =  args # self.cars is a list of strings
 
